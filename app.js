@@ -29,12 +29,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/listagem', listagemRouter);
-app.use('/noticia1', listagemRouter);
-app.use('/noticia2', listagemRouter);
-app.use('/noticia3', listagemRouter);
-app.use('/noticia4', listagemRouter);
-app.use('/noticia5', listagemRouter);
-app.use('/noticia6', listagemRouter);
+app.use('/noticia1', noticia1Router);
+app.use('/noticia2', noticia2Router);
+app.use('/noticia3', noticia3Router);
+app.use('/noticia4', noticia4Router);
+app.use('/noticia5', noticia5Router);
+app.use('/noticia6', noticia6Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
